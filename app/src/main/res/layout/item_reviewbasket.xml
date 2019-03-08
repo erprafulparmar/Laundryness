@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_shirt"
+            android:id="@+id/img_shirt"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_categoryname"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pepe jeans"
+            android:textStyle="bold"
+            android:fontFamily="Segoe UI"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_small_size"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="₹"
+            android:fontFamily="Segoe UI"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:fontFamily="Segoe UI"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_small_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_add"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/imgplus"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_plus"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="16dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:fontFamily="Segoe UI"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/title_small_size"
+                android:layout_marginRight="15dp"
+                android:textColor="#fff" />
+
+            <RelativeLayout
+                android:id="@+id/btn_minus"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/circle"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/img_minus"
+                    android:src="@drawable/ic_minus"
+                    android:layout_centerInParent="true" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#efeeee"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp">
+
+    </View>
+
+</LinearLayout>
